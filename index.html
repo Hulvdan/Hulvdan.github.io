@@ -5,28 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Алексей Чистов - Python Разработчик</title>
-    <link
+    <link rel="stylesheet" href="/font/fontello/css/fontello.css" />
+    <!-- <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
-    />
-    <link
+    /> -->
+    <!-- <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto%20Slab"
-    />
+    /> -->
   </head>
   <body class="preload">
     <main>
       <div id="title">Алексей Чистов</div>
       <div id="description">Python разработчик</div>
       <div id="icons">
-        <a href="https://github.com/Hulvdan" class="icon icon-github">
-          <i class="fab fa-6x fa-github"></i>
+        <a href="https://github.com/Hulvdan" id="icon-github" class="icon">
+          <i class="icon-github-circled"></i>
           <div class="icon-description">GitHub</div>
         </a>
-        <a href="https://gitlab.com/Hulvdan" class="icon icon-gitlab">
-          <i class="fab fa-6x fa-gitlab"></i>
+        <a href="https://gitlab.com/Hulvdan" id="icon-gitlab" class="icon">
+          <i class="icon-gitlab"></i>
           <div class="icon-description">GitLab</div>
         </a>
       </div>
@@ -61,7 +62,7 @@
     align-items: center;
     justify-content: center;
 
-    margin: 0 2rem;
+    padding: 0 2rem;
   }
 
   main {
@@ -102,11 +103,12 @@
     display: flex;
     justify-content: center;
     margin-top: 2rem;
-    gap: 5rem;
+    gap: 1.5rem;
   }
 
   .icon {
     padding: 1rem;
+    font-size: 5rem;
     color: white;
     text-align: center;
     --transition-speed: 0.15s;
@@ -123,11 +125,11 @@
     text-align: center;
   }
 
-  .icon-github:hover {
+  #icon-github:hover {
     color: #8f44f1;
   }
 
-  .icon-gitlab:hover {
+  #icon-gitlab:hover {
     color: #f58954;
   }
 
