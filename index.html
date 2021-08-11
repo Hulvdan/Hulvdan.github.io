@@ -24,6 +24,10 @@
           <i class="icon-gitlab"></i>
           <div class="icon-description">GitLab</div>
         </a>
+        <a href="https://t.me/hulvdan" id="icon-telegram" class="icon">
+          <i class="icon-telegram"></i>
+          <div class="icon-description">Telegram</div>
+        </a>
       </div>
     </main>
   </body>
@@ -63,6 +67,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    width: calc(100% - 2rem);
   }
 
   a {
@@ -96,13 +101,15 @@
 
   #icons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 3rem;
     gap: 1.5rem;
   }
 
   .icon {
-    padding: 1rem;
+    margin: 0;
+    padding: 0rem 1rem;
     font-size: 5rem;
     color: white;
     text-align: center;
@@ -126,6 +133,10 @@
 
   #icon-gitlab:hover {
     color: #f58954;
+  }
+
+  #icon-telegram:hover {
+    color: #549ff5;
   }
 
   .preload {
