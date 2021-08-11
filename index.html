@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Алексей Чистов - Python Разработчик</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto%20Slab"
+    />
+  </head>
+  <body class="preload">
+    <main>
+      <div id="title">Алексей Чистов</div>
+      <div id="description">Python разработчик</div>
+      <div id="icons">
+        <a href="https://github.com/Hulvdan" class="icon icon-github">
+          <i class="fab fa-6x fa-github"></i>
+          <div class="icon-description">GitHub</div>
+        </a>
+        <a href="https://gitlab.com/Hulvdan" class="icon icon-gitlab">
+          <i class="fab fa-6x fa-gitlab"></i>
+          <div class="icon-description">GitLab</div>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
+<style>
+  html,
+  body {
+    background-color: #161b22;
+    color: white;
+    height: 100%;
+  }
+
+  html {
+    display: table;
+    margin: auto;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  body {
+    font-family: "Roboto Slab";
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 2rem;
+  }
+
+  main {
+    animation: fadeIn 1s ease-in-out;
+    animation-fill-mode: forwards;
+  }
+
+  a {
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  #title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+
+    line-height: 4rem;
+
+    word-spacing: 0.6rem;
+    letter-spacing: 0.2rem;
+  }
+
+  #description {
+    margin-top: 1rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 100;
+  }
+
+  #icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 5rem;
+  }
+
+  .icon {
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    --transition-speed: 0.15s;
+
+    -webkit-transition: color var(--transition-speed) ease-out;
+    -moz-transition: color var(--transition-speed) ease-out;
+    -ms-transition: color var(--transition-speed) ease-out;
+    -o-transition: color var(--transition-speed) ease-out;
+    transition: color var(--transition-speed) ease-out;
+  }
+
+  .icon-description {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .icon-github:hover {
+    color: #8f44f1;
+  }
+
+  .icon-gitlab:hover {
+    color: #f58954;
+  }
+
+  .preload {
+    display: none;
+
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+</style>
+<script>
+  window.onload = function () {
+    const body_elem = document.getElementsByTagName("body")[0];
+    body_elem.classList.remove("preload");
+  };
+</script>
