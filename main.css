@@ -1,0 +1,94 @@
+html {
+  background-color: #161b22;
+  color: #f0f6fc;
+  font-family: "Roboto Slab";
+  text-align: center;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  min-width: 350px;
+  width: calc(100% - 2rem);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 900;
+
+  line-height: 4rem;
+
+  word-spacing: 0.6rem;
+  letter-spacing: 0.2rem;
+}
+
+#description {
+  margin-top: 1.5rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+#email {
+  color: #8b949e;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+#icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+
+.icon {
+  color: #8b949e;
+  margin: 0;
+  padding: 0rem 1rem;
+  font-size: 5rem;
+
+  --transition-speed: 0.3s;
+  -webkit-transition: color var(--transition-speed) ease-out;
+  -moz-transition: color var(--transition-speed) ease-out;
+  -ms-transition: color var(--transition-speed) ease-out;
+  -o-transition: color var(--transition-speed) ease-out;
+  transition: color var(--transition-speed) ease-out;
+}
+
+.icon-description {
+  font-size: 2rem;
+}
+
+#icon-github:hover {
+  color: #8f44f1;
+}
+
+#icon-gitlab:hover {
+  color: #f58954;
+}
+
+#icon-telegram:hover {
+  color: #549ff5;
+}

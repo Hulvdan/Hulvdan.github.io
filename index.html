@@ -10,11 +10,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Roboto%20Slab"
     />
+    <link rel="stylesheet" href="main.css" />
   </head>
-  <body class="preload">
+  <body>
     <main>
       <div id="title">Алексей Чистов</div>
       <div id="description">Python разработчик</div>
+      <div id="email">aleksey.chistov@gmail.com</div>
       <div id="icons">
         <a href="https://github.com/Hulvdan" id="icon-github" class="icon">
           <i class="icon-github-circled"></i>
@@ -32,126 +34,3 @@
     </main>
   </body>
 </html>
-<style>
-  html,
-  body {
-    background-color: #161b22;
-    color: white;
-    height: 90vh;
-  }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  body {
-    position: relative;
-    font-family: "Roboto Slab";
-    flex-direction: column;
-    vertical-align: middle;
-    display: flex;
-    align-items: center;
-
-    padding: 0 2rem;
-  }
-
-  main {
-    animation: fadeIn 1s ease-in-out;
-    animation-fill-mode: forwards;
-
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: calc(100% - 2rem);
-  }
-
-  a {
-    text-decoration: none;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-
-  #title {
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 900;
-
-    line-height: 4rem;
-
-    word-spacing: 0.6rem;
-    letter-spacing: 0.2rem;
-  }
-
-  #description {
-    margin-top: 1.5rem;
-    line-height: 3rem;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 100;
-  }
-
-  #icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 3rem;
-    gap: 1.5rem;
-  }
-
-  .icon {
-    margin: 0;
-    padding: 0rem 1rem;
-    font-size: 5rem;
-    color: white;
-    text-align: center;
-    --transition-speed: 0.15s;
-
-    -webkit-transition: color var(--transition-speed) ease-out;
-    -moz-transition: color var(--transition-speed) ease-out;
-    -ms-transition: color var(--transition-speed) ease-out;
-    -o-transition: color var(--transition-speed) ease-out;
-    transition: color var(--transition-speed) ease-out;
-  }
-
-  .icon-description {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  #icon-github:hover {
-    color: #8f44f1;
-  }
-
-  #icon-gitlab:hover {
-    color: #f58954;
-  }
-
-  #icon-telegram:hover {
-    color: #549ff5;
-  }
-
-  .preload {
-    display: none;
-
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -ms-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-  }
-</style>
-<script>
-  window.onload = function () {
-    const body_elem = document.getElementsByTagName("body")[0];
-    body_elem.classList.remove("preload");
-  };
-</script>
